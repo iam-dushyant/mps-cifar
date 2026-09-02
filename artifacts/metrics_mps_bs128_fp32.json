@@ -1,0 +1,13 @@
+[
+  {
+    "epoch": 1,
+    "loss": 3.7506757461547853,
+    "val_accuracy": 0.2255,
+    "seconds": 44.90167599997949,
+    "images_per_second": 1113.5441804003672,
+    "accelerator_memory_mb": 247.50341796875,
+    "device": "mps",
+    "batch_size": 128,
+    "amp": false
+  }
+]

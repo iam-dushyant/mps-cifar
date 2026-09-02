@@ -15,6 +15,9 @@ def choose_device(requested: str) -> torch.device:
         if not torch.backends.mps.is_available():
             raise RuntimeError("MPS requested but unavailable.")
         return torch.device("mps")
+    if requested == 'cuda':
+        if not torch.cuda.is_available():
+            raise RuntimeError("CUDA requested but unavailable.")
     if requested == "cpu":
         return torch.device("cpu")
     raise RuntimeError("Device must either be mps or cpu")
